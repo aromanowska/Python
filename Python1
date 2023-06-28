@@ -1,0 +1,105 @@
+a=2
+b=5
+c=5.0
+d=4.2
+print(a)
+print(b)
+print(c)
+print (d)
+
+a=2
+b=5
+c=5.0
+d=4.2
+print(a+b)
+print(a+c)
+print (a+d)
+
+a=2
+b=5
+c=5.0
+d=4.2
+print(a*b)
+print(a*c)
+print (a*d)
+
+
+s='kot'
+t='pies '
+print(s)
+print(t)
+print(s+t)
+print (t+s)
+
+i=input('Podaj i: ')
+j=input('Podaj j: ')
+print("wyświetl i: ", i)
+print("wyświetl j: " , j)
+wynik=(i+j)
+print ("wynik:", wynik)
+
+i=int(input('Podaj i: '))
+j=int(input('Podaj j: '))
+print ("wyświetl i:" , i)
+print ("wyświetl j:" , j)
+wynik=(i+j)
+print ("wynik: ", wynik)
+
+i=int(input('Podaj pierwszą liczbę całkowitą: '))
+j=int(input('Podaj drugą liczbę całkowitą: '))
+print(i%j
+print(j%i)
+
+i=int(input('Podaj pierwszą liczbę całkowitą: '))
+j=int(input('Podaj drugą liczbę całkowitą: '))
+k=int(input('Podaj trzecią liczbę całkowitą: '))
+if i>10:
+print (i)
+if j>10:
+print(j)
+if k>10:
+print (k)
+
+i=int(input('Podaj pierwszą liczbę całkowitą: '))
+if i%2==0:
+print ('liczba parzysta')
+else:
+print ('liczba nie parzysta')
+
+i=int(input('Podaj rok: '))
+if i%4==0 and i%100==0 and i%400==0 :
+print('rok przestępny')
+elif i%4!=0:
+print('rok nie przestępny')
+elif i%100!=0:
+print('rok przestępny')
+else:
+print('rok nie przestepny')
+
+f=float(input('Podaj liczbę zmiennoprzecinkową: '))
+print (" cygra przed przecinkiem %d" %f)
+print ("cyfra po przecinku ", int(f * 10 % 10)) 
+
+f=float(input('Podaj liczbę zmiennoprzecinkową: '))
+g=float(input('Podaj liczbę zmiennoprzecinkową: '))
+f1=int(f % 100 // 1)
+f2=(f-f1)
+g1=int(g % 100 // 1)
+g2=(g-g1)
+wf=f1+g2
+wg=g1+f2
+print(round(wf,2))
+print(wg)
+
+i=int(input('Podaj liczbę: '))
+j=int(input('podaj liczbę: '))
+if i**j > j**i:
+print(i, "do",j,"=",i ** j,"jest większe od",j, "do",i, "=",j ** i)
+else:
+print(j, "do",i,"=",j ** i,"jest większe od",i, "do",j, "=",i ** j)
+
+i=int(input('Podaj liczbę do spierwiastkowania: '))
+j=int(input('Podaj stopień spierwiastka: '))
+pierwiastek= i**(1/j)
+
+
