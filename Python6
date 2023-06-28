@@ -1,0 +1,71 @@
+Zadanie1.
+a=1
+b=2
+c=a
+a=b
+b=c
+print(a,b)
+Zadanie2.
+def zmien(a,b):
+print(a,b)
+c=a
+a=b
+b=c
+print(a,b)
+zmien(1,2)
+Zadanie3. (??)
+def zamien(a,b):
+lista=[a,b]
+c=a
+a=b
+b=c
+print(a,b)
+zamien(1,2)
+2
+Zadanie 4.
+def odwroc(lista):
+for i in reversed(lista):
+lista=[i]
+print(list(reversed(lista)),end="")
+lista_=[1,5,4,3]
+odwroc(lista_)
+Zadanie5.
+import random
+lista2=[]
+for i in range(10):
+lista2.append(random.randint(1,100))
+print(lista2)
+def sortowanie_babelkowe(lista):
+n = len(lista)
+while n > 1:
+zamien = False
+for l in range(0, n-1):
+if lista[l] > lista[l+1]:
+lista[l], lista[l+1] = lista[l+1], lista[l]
+zamien = True
+n -= 1
+if zamien == False: break
+3
+print(lista)
+sortowanie_babelkowe(lista2)
+Zadanie6.
+def sor(l):
+ls = l.split()
+n = len(l)
+for i in range(len(ls)):
+for j in range(0, len(ls)-1):
+if ls[j] > ls[j+1]:
+ls[j], ls[j+1] = ls[j+1], ls[j]
+print(ls)
+s=len(ls)
+while s > 0:
+c = 0
+for i in range(s - 1):
+if len(ls[i]) > len(ls[i + 1]):
+c = ls[i]
+ls[i] = ls[i + 1]
+ls[i + 1] = c
+s -= 1
+print(ls)
+lst = str(input("Podaj zdanie: "))
+lst = sor(lst)
