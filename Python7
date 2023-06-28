@@ -1,0 +1,52 @@
+Zadanie 1,
+fo=open('plik.txt','w')
+fo.write('To zostanie do dane do pliku!\nTo będzie w nowej linijce\n’')
+fo.close()
+Zadanie 2.
+fo=open('plik.txt','r')
+while 1:
+s = fo.read(3)
+print(s)
+if s == '':
+break
+fo.close()
+Zadanie 3.
+fo = open('plik.txt','a')
+fo.write(input('Zdanie dodane do pliku : ') + '\n')
+fo.close()
+2
+Zadanie 4.
+fo = open('plik.txt','r')
+s = fo.read()
+ile = s.count('a')
+print(ile)
+fo.close()
+Zadanie 5.
+fo=open('plik.txt','r')
+slowo=input("podaj słowo:")
+s=fo.readlines()
+while 1:
+if slowo in s:
+print(s)
+if s == '':
+break
+fo.close()
+Zadanie 6.
+fo=open('plik.txt','r')
+fo2=open('p4.txt','w')
+s=fo.read()
+for i in s:
+if i==' ':
+i='*'
+fo2.write(i)
+else:
+fo2.write(i)
+fo.close()
+3
+Zadanie 7.
+fo=open('plik.txt','r')
+fo2=open('p4.txt','w')
+s=fo.read()
+u=s.upper()
+fo2.write(u)
+fo.close()
