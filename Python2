@@ -1,0 +1,96 @@
+
+Zadanie 1.
+for i in range(5): print(i)
+for i in range(4,8): print(i)
+for i in range(1,20,3): print(i)
+for i in range(5): print(i, end="" )
+Zadanie 2.
+for i in range(2,21):
+if i%2==0:
+print(i)
+2
+for i in range(19,0,-1):
+if i%2!=0:
+print(i)
+for i in range(1,11):
+print(i, i**2)
+Zadanie 3.
+n=int(input("Podaj pierwszą zmienną: "))
+m=int(input("Podaj drugą zmienną: "))
+if n<m:
+for i in range(n,m+1): print(i)
+else:
+for i in range(n,m-1,-1): print(i)
+3
+Zadanie 4.
+suma = 0
+for i in range(1,101):
+suma = suma + i
+print("Suma: ", suma)
+Zmodyfikowanie zadanie 4.
+n=int(input('Podaj liczbę: '))
+suma = 0
+for i in range(1,n):
+suma = suma + i
+print("Suma: ", suma)
+Zadanie 5.
+n=1
+suma=0
+while suma < 1000000:
+suma = suma + n
+n=n+1
+print(n)
+4
+Zadanie 6.
+n=1
+suma=0
+while suma < 10:
+suma = suma + 1/n
+n=n+1
+print(n)
+Zadanie 7.
+n=int(input("Podaj liczbę: "))
+i=1
+while i*i<n:
+i+=1
+if i*i==n:
+print("liczba", n, "jest kwadratem", i)
+else:
+print("liczba",n,"nie jest kwadratem żadnej liczby")
+Zadanie 8
+n=int(input("Podaj liczbe n: "))
+silnia=1
+for i in range(n):
+silnia*=i+1
+print(silnia)
+5
+Zadanie 9.
+n=int(input("Podaj liczbę podstawa potęgi: "))
+m=int(input("Podaj liczbę wykładnik potęgi : "))
+wynik=1
+for i in range(m):
+wynik*=n
+print(wynik)
+Zadanie 10.
+n=int(input("Podaj liczbę którą będziesz dzielić: "))
+k=0
+for i in range(1,n+1):
+if n%i==0:
+k+=1
+print(k)
+Zdanie11
+n=int(input("Podaj liczbę: "))
+for i in range(2,n):
+if n % i == 0:
+print('Liczba',n,'jest złożona')
+break
+else:
+print('Liczba',n,'jest pierwsza')
+6
+Zadanie 12
+for n in range(1,201):
+for i in range(2,n):
+if n % i == 0:
+break
+else:
+print(n, end=' ')
