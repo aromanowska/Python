@@ -1,0 +1,93 @@
+Zadanie 1.
+s='Ala ma kota'
+lz=list(s)
+print(lz)
+for i in range(len(lz)):
+print(lz[i])
+for i in lz:
+print(i)
+Zadanie2.
+s='Ala ma kota'
+lz=list(s)
+ile=lz.count('a')
+print(ile)
+2
+Zadanie3.
+from math import factorial
+n= factorial(1000)
+s=str(n)
+lz=list(s)
+ile=lz.count('9')
+print(ile)
+ile2=[]
+for i in range(10):
+s=str(i)
+ile2 += [lz.count(s)]
+print(ile2)
+from math import factorial
+import sys
+sys.set_int_max_str_digits(10**6)
+n= factorial(2000)
+s=str(n)
+lz=list(s)
+ile2=[]
+for i in range(10):
+s=str(i)
+ile2 += [lz.count(s)]
+print(ile2)
+Zadanie 4.
+lz=list('Alamakota')
+print(lz.index('a'))
+print(lz.index('m'))
+print(lz.index('k'))
+3
+l=[]
+for n in range(0,31):
+l.append(3**n-2**n)
+n=l.index(1161737179)
+print(l)
+print(n)
+l=(3**19-2**19)
+print(l)
+Zadanie5.
+l=[]
+l2=[]
+for n in range(0,31):
+l.append(3**n-2**n)
+l2.append(l[n]%19)
+print(l)
+print(l2)
+print(10 in l2)
+print(11 in l2)
+4
+l=[]
+l2=[]
+for n in range(0,18):
+l.append(3**n-2**n)
+l2.append(l[n]%19)
+liczba=int(input("Podaj liczbę od 0 d0 18: "))
+if liczba in l2:
+print(liczba)
+break
+elif liczba>18:
+print("za duża liczba")
+break
+else:
+print("nie ma nie takiej liczby")
+break
+Zadanie 6.
+for liczba in range(1,101):
+l.append(1/liczba)
+print(sum(l))
+print(min(l))
+print(max(l))
+5
+s=str(n)
+lz=list(s)
+suma=0
+ile2=[]
+lista=[int(el) for el in lz]
+print(lista)
+for i in range(len(lz)):
+lz[i]=(int(lz[i]))
+print(sum(lz))
